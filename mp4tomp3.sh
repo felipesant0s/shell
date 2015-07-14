@@ -8,7 +8,7 @@ pacpli=($(/usr/bin/aptitude search pacpl | awk '{print $1}'))
   else
   	echo -n "pacpl não encontrado, deseja instalar? [s] or [n] "
 	read question
-	if [ "$question" == "n" ]; then
+	if [ "$question" == "s" ]; then
 	  sudo aptitude install pacpl
 	else
 	  exit 1
