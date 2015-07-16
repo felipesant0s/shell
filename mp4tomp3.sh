@@ -1,6 +1,6 @@
 #!/bin/bash
 
-pacpli=($(/usr/bin/aptitude search pacpl | awk '{print $1}'))
+pacpla=($(/usr/bin/aptitude search pacpl | awk '{print $1}'))
   if [ "$pacpli" == "i" ]; then
 	echo -n "Qual arquivo deseja converter?: "
 	read arq
